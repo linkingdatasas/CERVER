@@ -1,0 +1,13 @@
+<div class="junbo">
+        <div class="content">
+            <p>Bienvenido al Sistema Nacional de verificación de Certificados</p>
+            <div class="input">
+                <textarea class="md-textarea form-control" placeholder="Ingrese el objeto JSON correspondiente al certificado" id="json_txt" #json_txt></textarea>
+                <div>
+                <button (click)="verify(json_txt.value)" pButton label="Verificar" class="btn btn-success "></button> 
+                </div>
+            </div>
+        </div>
+
+    
+</div>

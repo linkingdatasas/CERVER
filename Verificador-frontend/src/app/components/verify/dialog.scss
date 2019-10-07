@@ -1,0 +1,39 @@
+.mat-dialog-content{
+    color: #2A23D2;
+    width: 509px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.success {
+    font-family: Montserrat;
+    color: white;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.error {
+    font-family: Montserrat;
+    color: white;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.mat-dialog-action{
+    text-align: center;
+}
+
+.mat-button{
+    font-family: Montserrat;
+    color: #34BEFF;
+    font-weight: 500;
+    font-size: 14px;
+    margin: auto;
+    text-decoration: underline;
+    border: 0;
+}
