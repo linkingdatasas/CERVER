@@ -60,9 +60,9 @@ Para acceder al rest-server se debe utilizar el navegador "http://localhost:3000
 
 ## Geracion de una abstraccion utilizando el contrato inteligente issue
 
-Para probar el contrato inteligente issue debe utilizar la metadata cointenida en un certificado. La metadata se encuantra en los [ejemplos para las entidades publicas]().
+Para probar el contrato inteligente issue debe utilizar la metadata cointenida en un certificado. La metadata se encuantra en los [ejemplos para las entidades publicas](https://github.com/linkingdatasas/CERVER/tree/master/Verificador/JSONEx).
 
-A continuacion presentamos la estrucura de metadata para un certificado de antecedentes disciplinarios de la procuraduria
+A continuacion presentamos la estrucura de metadata para un certificado de antecedentes disciplinarios de la procuraduria, `procu.json`
 
 ```
 {

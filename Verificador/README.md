@@ -34,4 +34,4 @@ Carpeta que contiene la version 1.0 del archivo de python que se creo para la cr
 
 # Authors
 
-- Linking Data
+- Equipo Linking Data
