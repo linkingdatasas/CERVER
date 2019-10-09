@@ -1,17 +1,28 @@
 # CERVER Verificador
 
-Esta aplicaicon permite verificar si la metadata de un certficado emitido por una entidad publica corresponde a la abstraccion que se guarda en el blockchain, en este caso de Hyperledger Fabric. Utiliza un programa en Python y un servicio Flask para generar el hash y consultar el registro compartido para identificar si existe la abstraccion correspondiente y si se genera el mismo cert-hash a partir de la metadata.
-Cuando el certificado es valido se emite un mensaje positivo d elos contrario se emite un mensaje negativo.
+Esta aplicacion permite verificar si la metadata de un certficado emitido por una entidad publica corresponde a la abstraccion que se guarda en el blockchain, en este caso de Hyperledger Fabric. Utiliza un programa en Python y un servicio Flask para generar el hash y consultar el registro compartido para identificar si existe la abstraccion correspondiente y si se genera el mismo cert-hash a partir de la metadata.
+Cuando el certificado es valido se emite un mensaje positivo, de lo contrario se emite un mensaje negativo.
 
 La aplicacion funciona localmente sobre un ambiente de desarrollo que tenga desplegado el Business Network Application en un nodo Fabric. 
-La instrucciones para iniciar el nodo, despelgar el contrato inteligente y activar el rest server deben consultar la carpeta [API](https://github.com/linkingdatasas/CERVER/tree/master/API).
+La instrucciones para iniciar el nodo, despelgar el contrato inteligente y activar el rest-server se deben consultar la carpeta [API](https://github.com/linkingdatasas/CERVER/tree/master/API).
+
+## Iniciar el backend de la aplicacion
+
+Navegar a la carpeta [Verificador](https://github.com/linkingdatasas/CERVER/tree/master/Verificador) que contiene la funcion en python que verifica el hash de la abstraccion del certificado y el servicio Flask.
+
+Para iniciar la aplicacion
+
+`````
+python3 run.py
+`````
+
+## Iniciar el frontend de la aplicacion
 
 Para esta aplicacion es necesario utilizar node y npm compatible con la version de Angular.
 `````
 nvm install 10
 `````
-## Iniciar la aplicacion
-
+Para iniciar la aplicacion navergar a la carpeta [Verificador-frontend](https://github.com/linkingdatasas/CERVER/tree/master/Verificador-frontend),
 `````
 npm install 
 `````
@@ -22,7 +33,7 @@ npm start
 
 ## Utilizar la aplicacion 
 
-Navegar a `http://localhost:4200/`. 
+Navegar a `http://localhost:4200/verify`. 
 
 Si anteriormente se ha utilizado el Contrato Inteligente para generar una abstraccion, por ejemplo del certificado de antecedentes penales de la procuraduria se puede verificar el contenido de la meta data utilizando el siguiente conjunto de datos:
 
@@ -52,4 +63,4 @@ Si anteriormente se ha utilizado el Contrato Inteligente para generar una abstra
 }
 `````
 
-Al utilizar este conjunto de datos se debe obtener un mensaje exitoso. Al cambiar cualquier componente de la estructura anterior se debe genera un mensaje que rechaza la integridad del certificado en la medida en que no corresponde al que se tiene en el registro.
+Al utilizar este conjunto de datos se debe obtener un mensaje exitoso. Al cambiar cualquier componente de la estructura anterior se debe genera un mensaje que rechaza la integridad del certificado, en la medida en que no corresponde al que se tiene en el registro del Blockchain de Hyperledger Fabric.

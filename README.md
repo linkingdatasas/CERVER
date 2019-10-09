@@ -2,7 +2,7 @@
 Segundo puesto en RetoBlockchain Apps.co, Colombia 4.0 (Corferias Bogota), Septiembre 25-27, 2019
 
 ## Equipo Linking Data
-* Carlos Castro-Iragorri
+* [Carlos Castro-Iragorri](https://ccastroiragorri.github.io/)
 * Oscar David Huertas
 * Julian Santiago Ramirez
 * Brayan Mauricio Rodriguez
@@ -21,21 +21,21 @@ El objetivo del proyecto, que se presenta a consideración de Apps.co en el marc
 *	Al ser una red permisionada no requiere de un criptoactivo como mecanismo de incentivo para operar la red.
 *	Promueve la construcción de un consorcio público de gobernanza compartida que genere capacidades tecnológicas y se constituya como un bien público.
 *	Proporcionamos una solución modular que separa el proceso de emisión y verificación de los certificados para que la experiencia de usuario pueda articularse para las necesidades de cada uno de los consumidores: las entidades públicas y el público en general.
-*   Proporcionamos una API que pueda interactuar con los procesos de emision de certificados existentes en las entidades publicas. De esta manera proporcionamos una rapida adopcion de la tecnologia sin desconmocer los mecanismos de emision actuales de las entidades.
+*   Proporcionamos una API que pueda interactuar con los procesos de emision de certificados existentes en las entidades publicas. De esta manera proporcionamos una rapida adopcion de la tecnologia sin desconocer los mecanismos de emision actuales de las entidades.
 *	Contamos con experiencia en casos de uso similares como lo son los certificados académicos que utilizan la tecnología blockchain.
 *	Proponemos un estándar ligero que se concentre en las necesidades básicas de certificación de información desde la perspectiva del emisor, es decir las entidades públicas.
 *	Proponemos un validador universal que puede interactuar con otros sistemas de emisión de certificaciones que utilicen blockchain no permisionado u otras tecnologías alternativas.
 *	Una red de Blockchain permisionada habilita el intercambio de información interinstitucional que va más allá del caso de uso de certificaciones. Por lo tanto es un primer paso a un sistema de información descentralizado que soporte procesos (contratos inteligentes) transversales a lo largo de las entidades públicas.
 
 ## Presentacion de la Solucion.
-La solucion se encuentra descrita en el documento [Cerver Presentacion Final](https://github.com/linkingdatasas/CERVER/blob/master/Cerver%20Presentacion%20Final.pdf) en donde adicionalmente encontrara unos vinculos los videos que muestran como funciona tanto CERVER API como CERVER Verificador.
+La solucion se encuentra descrita en el documento [Cerver Presentacion Final](https://github.com/linkingdatasas/CERVER/blob/master/Cerver%20Presentacion%20Final.pdf) en donde adicionalmente encontrara unos vinculos los videos que muestran como funciona tanto [CERVER API](https://youtu.be/NvRdBWD6sGQ) como [CERVER Verificador](https://youtu.be/YfB_FZ4rwLw).
 
 Este repositorio esta organizado de la siguiente forma:
 
-* API: contiene la estructura de datos del registro y el contrato inteligente. Estos componentes estan encapsulados en el Business Network Application. Ademas contien las intrucciones para utilizar un nodo local de Fabric para desplegar la solucion.
+* API: contiene la estructura de datos del registro y el contrato inteligente. Estos componentes estan encapsulados en el Business Network Application. Ademas contiene las intrucciones para utilizar un nodo local de Fabric para desplegar la solucion.
 * UX: contiene los diseños de la experiencia de usuario y las presentaciones parciales del trabajo realizado durante la Hackathon.
-* Verificador: contiene las funciones en python para verificar el certificado y encapsular la metadata en un documnento pdf, que es el tipo0 de documento que usualmnete utilizan las entidades publicas para transmitir los certificados.
-* Verificador-forntend: contiene la aplicacion que le permite un usuario contrastar la metadata de un certifricado con la abstraccion que se tiene del certificado en el registro compoartido / blockchain (Hyperledger Fabric).
+* Verificador: contiene las funciones en python para verificar el certificado y encapsular la metadata en un documnento pdf, que es el tipo de documento que usualmnete utilizan las entidades publicas para transmitir los certificados.
+* Verificador-forntend: contiene la aplicacion que le permite un usuario contrastar la metadata de un certificado con la abstraccion que se tiene del certificado en el registro compartido / blockchain (Hyperledger Fabric).
 * Cerver Presentacionb Final.pdf
 
 ## _Los invitamos utilizar el repositorio y construir conjuntamente una autopista de información para el sector público!_
