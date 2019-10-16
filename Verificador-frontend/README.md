@@ -33,33 +33,35 @@ npm start
 
 ## Utilizar la aplicacion 
 
+Nota: si no es la primera vez que utiliza la aplicacion se sugiere que utilice la navegacion en incognito para que la informacion guardada en el navegador no genere alguna incompatibilidad con la aplicacion.
+
 Navegar a `http://localhost:4200/verify`. 
 
 Si anteriormente se ha utilizado el Contrato Inteligente para generar una abstraccion, por ejemplo del certificado de antecedentes penales de la procuraduria se puede verificar el contenido de la meta data utilizando el siguiente conjunto de datos:
 
 `````
 {
-  "$class": "org.picert.issue",
-  "absId": "PROCUR001",
-  "certId": "134083306",
-  "administrator": "resource:org.picert.Admin#admin@entidad.gov.co",
-  "name": "Certificado de Antecedentes",
-  "message": "La PROCURADURIA GENERAL DE LA NACIÓN certifica que una vez consultado el Sistema de Información de Registro de Sanciones e Inhabilidades (SIRI), el(la) señor(a) CARLOS ALBERTO CASTRO IRAGORRI identificado(a) con Cédula de ciudadanía número 79947917: NO REGISTRA SANCIONES NI INHABILIDADES VIGENTES",
-  "issuer": {
-    "$class": "composer.blockcerts.Issuer",
-    "id": "899999119",
-    "typen": "Profile",
-    "name": "Procuraduria General de la Nacion",
-    "image": "procu.png",
-    "signatureLines": {
-      "$class": "composer.blockcerts.SignatureLines",
-      "typen": "SignatureLine,Extension",
-      "name": "Manuel A. Espinosa",
-      "image": "firmaME.png",
-      "jobtitle": "Jefe Division Centro de Atencion al Publico"
-    }
-  },
-  "uri": "RepoPROCUR"
+    "$class": "org.picert.cert",
+    "certId": "134083306",
+    "administrator": "resource:org.picert.Admin#admin@entidad.gov.co",
+    "typeC": "Assertion",
+    "name": "Certificado de Antecedentes",
+    "message": "La PROCURADURIA GENERAL DE LA NACIÓN certifica que una vez consultado el Sistema de Información de Registro de Sanciones e Inhabilidades (SIRI), el(la) señor(a) CARLOS ALBERTO CASTRO IRAGORRI identificado(a) con Cédula de ciudadanía número 79947917: NO REGISTRA SANCIONES NI INHABILIDADES VIGENTES",
+    "issuer": {
+      "$class": "composer.blockcerts.Issuer",
+      "id": "899999119",
+      "typen": "Profile",
+      "name": "Procuraduria General de la Nacion",
+      "image": "procu.png",
+      "signatureLines": {
+        "$class": "composer.blockcerts.SignatureLines",
+        "typen": "SignatureLine,Extension",
+        "name": "Manuel A. Espinosa",
+        "image": "firmaME.png",
+        "jobtitle": "Jefe Division Centro de Atencion al Publico"
+      }
+    },
+    "context": "https://w3id.org/openbadges/v2,https://w3id.org/blockcerts/v2"
 }
 `````
 

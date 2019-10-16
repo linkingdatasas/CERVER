@@ -1,5 +1,5 @@
 # CERVER
-Segundo puesto en RetoBlockchain Apps.co, Colombia 4.0 (Corferias Bogota), Septiembre 25-27, 2019
+Segundo puesto en [RetoBlockchain Apps.co](https://apps.co/inscripciones/convocatoria/convocatoria-reto-blockchain/), Colombia 4.0 (Corferias Bogota), Septiembre 25-27, 2019
 
 ## Equipo Linking Data
 * [Carlos Castro-Iragorri](https://ccastroiragorri.github.io/)
@@ -15,7 +15,7 @@ Es de interés de las entidades públicas y la ciudadanía en general que el pro
 
 El objetivo del proyecto, que se presenta a consideración de Apps.co en el marco del reto Blockchain, consiste en diseñar una solución que aproveche el potencial de estándares y tecnología abierta, junto con la tecnología de registros distribuidos para ofrecer una solución que pueda ser de rápida adopción por las entidades públicas y que no los obligue a depender de un único prestador. Este es un desafío importante en el ámbito de soluciones Blockchain que promueve la interoperabilidad entre los diferentes proyectos y soluciones que actualmente están en diferentes fases de desarrollo.
 
-## Aspectos diferencidores
+## Aspectos diferenciadores
 
 *	Ofrecemos una solución de Blockchain permisionada que pueda dar inicio a una solución descentralizada ajustada a las necesidades del sector público local. Con generación de conocimiento y habilidades dentro de las mismas áreas de tecnología de las entidades públicas.
 *	Al ser una red permisionada no requiere de un criptoactivo como mecanismo de incentivo para operar la red.
@@ -35,7 +35,9 @@ Este repositorio esta organizado de la siguiente forma:
 * API: contiene la estructura de datos del registro y el contrato inteligente. Estos componentes estan encapsulados en el Business Network Application. Ademas contiene las intrucciones para utilizar un nodo local de Fabric para desplegar la solucion.
 * UX: contiene los diseños de la experiencia de usuario y las presentaciones parciales del trabajo realizado durante la Hackathon.
 * Verificador: contiene las funciones en python para verificar el certificado y encapsular la metadata en un documnento pdf, que es el tipo de documento que usualmnete utilizan las entidades publicas para transmitir los certificados.
-* Verificador-forntend: contiene la aplicacion que le permite un usuario contrastar la metadata de un certificado con la abstraccion que se tiene del certificado en el registro compartido / blockchain (Hyperledger Fabric).
+* Verificador-frontend: contiene la aplicacion que le permite un usuario contrastar la metadata de un certificado con la abstraccion que se tiene del certificado en el registro compartido / blockchain (Hyperledger Fabric).
 * Cerver Presentacionb Final.pdf
+
+Para utilizar la aplicacion primero se debe seguir las instrucciones de la carpeta [API](https://github.com/linkingdatasas/CERVER/tree/master/API) y luego las instrucciones de la carpeta [Verificador-frontend](https://github.com/linkingdatasas/CERVER/tree/master/Verificador-frontend) 
 
 ## _Los invitamos utilizar el repositorio y construir conjuntamente una autopista de información para el sector público!_

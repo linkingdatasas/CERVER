@@ -2,7 +2,7 @@
 
 CERVER API es una aplicacion que permite integrar, la emision de abstracciones de certificados generados mediante un contrato inteligente,al proceso de emision de certificados de entidades publicas. En esta prueba de concepto (POC) el contrato inteligente funciona sobre un nodo local de Hyperledger Fabric que ejecuta un REST Server de Hyperledger Composer. La logica de negocio se creo utilizando Hyperledger Composer y se despliega y se activa el REST Server utilizando las funciones CLI de Hyperledger Composer. 
 
-A continuacion de describe el proceso que permite el funcionamiento del REST SERVER.
+A continuacion se describe el proceso que permite el funcionamiento del REST SERVER.
 -----
 El proyecto se ha desarrollado utilizando los frameworks y herramientas de Hyperledger, en particular [Fabric 1.2](https://hyperledger-fabric.readthedocs.io/en/release-1.2/) and [Composer](https://hyperledger.github.io/composer/latest/introduction/introduction)  
 
@@ -10,7 +10,7 @@ En esta oportunidad vamos a desplegar la solucion sobre un nodo operado por una 
 
 Antes de iniciar debe instalar el ambiente de desarrollo de [Composer](https://hyperledger.github.io/composer/latest/installing/development-tools). Luego de esta instalacion debe tener los Composer CLI tools y las imagenes de Fabric.
 
-Adicionalmente debe instaler una version de node y npm compatible con Composer y Fabric.
+Adicionalmente debe instalar una version de node y npm compatible con Composer y Fabric.
 `````
 nvm install 8.9
 `````
@@ -60,7 +60,7 @@ composer network ping -c admin@picert
 `````
 Para acceder al rest-server se debe utilizar el navegador "http://localhost:3000"
 
-## Geracion de una abstraccion utilizando el contrato inteligente issue en el REST SERVER
+## Generacion de una abstraccion utilizando el contrato inteligente issue en el REST SERVER
 
 Para probar el contrato inteligente issue debe utilizar la metadata contenida en un certificado. La metadata se encuentra en los [ejemplos para las entidades publicas](https://github.com/linkingdatasas/CERVER/tree/master/Verificador/JSONEx).
 
@@ -101,7 +101,7 @@ sh getBlockInfo.sh
 `````
 ## Parar y destruir nodo de Fabric (contenedores), junto con las tarjetas creadas
 
-Para mantene run ambiente de desarrollo limpio se sugiere que al final de la POC se navege a la carpeta `fabric-tools` y se utilize el script `stopbna.sh` para desmontar la aplicacion.
+Para mantener un ambiente de desarrollo limpio se sugiere que al final de la POC se navege a la carpeta `fabric-tools` y se utilize el script `stopbna.sh` para desmontar la aplicacion.
 
 `````
 sh stopbna.sh

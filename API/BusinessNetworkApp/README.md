@@ -2,10 +2,10 @@
 
 Caso de uso de emision de certificados utilizando hyperledger blockchain y siguiendo el estandar [Blockcerts](https://www.blockcerts.org/guide/standard.html)
 
-El diseño de la red (Business Network) contien los siguientes elementos:
+El diseño de la red (Business Network) contiene los siguientes elementos:
 
 **Participant** </p> 
-`Administrator`: emisor de los certificados, funcionario CASA UR. </p>
+`Administrator`: emisor de los certificados, funcionario de la entidad. </p>
 
 **Asset** </p> 
 `Cert`: Cerfificado con informacion completa (off-chain) </p>
@@ -13,11 +13,8 @@ El diseño de la red (Business Network) contien los siguientes elementos:
 
 **Transaction**
 `issue`: emision de certificados y en su forma abstracta.
-`verify`: verificacion de certificados.
 
 El certificado es emitido por un usuario administrador, funcionario autorizado de la entidad publica. La emision se hace a partir de la transaccion `issue`. Esta transaccion (contrato inteligente) permite guardar el certificado y tambein generar una abstraccion del certificado. La abstraccion se entiende como el conjunto minimo de datos que relaciona el certificado original con un mecanismo de verificacion (certHash) y el medio donde se encuentra la informacion. Este ultimo campo contiene la referencia la blockchain (pemisionada o no permisionada) donde esta almacenada la abstraccion.
-
-Adicionalmente se proporciona otra transaccion que permite validar el certificado `verify`.
 
 Para crear el archivo *.bna debemos utilizar la funcion
 
